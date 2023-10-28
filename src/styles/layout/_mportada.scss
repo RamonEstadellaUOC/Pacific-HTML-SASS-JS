@@ -1,0 +1,102 @@
+
+// MAIN PORTADA
+
+.introduccion {
+    max-width: 1000px;
+    font-family: 'ThePacific';
+    text-align: center;
+    line-height: 30px;
+}
+
+.introduccion__p {
+    @include p;
+
+}
+
+.introduccion--img {
+    max-width: 900px;
+    border-radius: 5px;
+    margin-bottom: 50px;
+
+    @media (max-width: 920px) {
+        max-width: 400px;
+    }
+
+    @media (max-width: 436px) {
+        display: none;
+    }
+}
+
+.portada-main {
+    @include main;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    @media (max-width: 1353px) {
+        display: flex;
+        flex-direction: column;
+
+    }
+}
+
+.galeria {
+    max-width: 1500px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    padding: 50px;
+    gap: 10px;
+
+    @media (max-width: 1858px) {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.galeria__figure {
+    text-align: center;
+}
+
+.galeria__img {
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+
+    @media (max-width: 468px) {
+        max-width: 200px;
+    }
+}
+
+.bandera {
+    width: 300px;
+}
+
+.avion {
+    width: 450px;
+
+    @media (max-width: 1467px ) {
+        width: 350px;
+    }
+}
+
+.aviones {
+    width: 500px;
+
+    @media (max-width: 1467px ) {
+        width: 400px;
+    }
+
+    @media (max-width: 1024px ) {
+        width: 300px;
+    }
+}
+
+.galeria__figcap {
+    font-family: 'ThePacific';
+    text-align: center;
+    line-height: 30px;
+    margin-bottom: 100px;
+    font-size: 16px;
+}
+

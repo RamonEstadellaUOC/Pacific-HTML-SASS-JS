@@ -1,0 +1,21 @@
+{
+  "name": "-y",
+  "version": "1.0.0",
+  "source": "src/categoria.html",
+  "scripts": {
+    "start": "parcel src/portada.html",
+    "build": "parcel build"
+  },
+  "author": "",
+  "license": "ISC",
+  "keywords": [],
+  "description": "",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.10.0",
+    "parcel": "latest",
+    "parcel-bundler": "^1.12.5"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.4.2"
+  }
+}

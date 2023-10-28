@@ -1,0 +1,18 @@
+//GENERAL
+@import "general/variables";
+@import "general/normalize";
+@import "general/mixin";
+
+
+// LAYOUTS
+@import "layout/footers";
+@import "layout/headers";
+@import "layout/mcategoria";
+@import "layout/mpresentacio";
+@import "layout/mportada";
+@import "layout/menllaços";
+@import "layout/mdetall";
+
+
+// FONTAWESOME
+@import "npm:@fortawesome/fontawesome-free/css/all.css";

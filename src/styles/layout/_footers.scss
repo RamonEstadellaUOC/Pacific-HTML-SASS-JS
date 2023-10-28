@@ -1,0 +1,61 @@
+
+// FOOTER GENERAL
+
+.footer {
+    background: {
+        image: url(../assets/img/p_transition_treatments_03\ \(1\).jpg);
+        position: center;
+        size: cover;
+    }
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    display: flex;
+    height: 500px;
+}
+
+.footer__contact {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    justify-content: space-around;
+    color: white;
+
+    @media (max-width: 962px) {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.footer__autor--img {
+    width: 500px;
+
+    @media (max-width: 544px) {
+        width: 300px;
+    }
+
+    @media (max-width: 346px) {
+        width: 250px;
+    }
+}
+
+.footer__socialmedia, .footer__autor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.footer__hbo {
+    margin-top: 10px;
+    color: white;
+}
+
+.footer__socialmedia--link {
+    font-size: 50px;
+}

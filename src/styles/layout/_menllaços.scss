@@ -1,0 +1,46 @@
+
+// MAIN ENLACES
+
+.enlaces-main {
+    @include main;
+    display: flex;
+    flex-direction: column;
+}
+
+.fuentes__h2 {
+    @include h2;
+    padding: 50px;
+    line-height: 50px;
+}
+
+.fuentes__p {
+    @include p;
+}
+
+.fuentes__a {
+    @include p;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.fuentes__figure {
+    text-align: center;
+}
+
+.fuentes__img {
+    max-width: 500px;
+
+    @media (max-width: 538px ) {
+        max-width: 350px;
+        margin: auto;
+    }
+
+    @media (max-width: 402px ) {
+        max-width: 300px;
+        margin: auto;
+    }
+}
+
+.fuentes__figcap {
+    @include p;
+}

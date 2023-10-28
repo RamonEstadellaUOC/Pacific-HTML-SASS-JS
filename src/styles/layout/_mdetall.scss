@@ -1,0 +1,103 @@
+// MAIN DETALLES
+
+.detall-main {
+    @include main;
+}
+
+
+.cinema__h2, .ilustracion__h2 {
+    padding: 50px;
+    text-align: center;
+    font-family: 'ThePacific';
+    line-height: 30px;
+    font-size: 30px;
+}
+
+.cinema__vidcard {
+    text-align: center;
+}
+
+.cinema__iframe {
+    max-width: 600px;
+    margin: auto;
+    height: 400px;
+
+    @media (max-width: 842px ) {
+        max-width: 600px;
+        margin: auto;
+        height: 300px;
+    }
+
+    @media (max-width: 550px ) {
+        max-width: 350px;
+        height: 200px;
+        margin: auto;
+    }
+
+    @media (max-width: 382px ) {
+        max-width: 250px;
+        height: 150px;
+        margin: auto;
+    }
+}
+
+.cinema__figcaption {
+    font-family: 'ThePacific';
+}
+
+.cinema__p {
+    padding: 20px 50px;
+    font-family: 'ThePacific';
+    line-height: 30px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.ilustracion {
+    text-align: center;
+    max-width: 800px;
+    margin: auto;
+}
+
+.ilustracion__figure {
+    max-width: 800px;
+    margin: auto;
+}
+
+.ilustracion__img {
+    max-width: 800px;
+    margin: auto;
+    margin-top: 50px;
+
+    @media (max-width: 842px ) {
+        max-width: 500px;
+        margin: auto;
+    }
+
+    @media (max-width: 550px ) {
+        max-width: 300px;
+        margin: auto;
+    }
+}
+
+.ilustracion__figcap {
+    margin-bottom: 50px;
+}
+
+.ilustracion__list {
+    padding: 50px 50px;
+    font-family: 'ThePacific';
+    line-height: 30px;
+    font-size: 20px;
+}
+
+.ilustracion__list--dibujo {
+    margin-bottom: 50px;
+}
+
+.ilustracion__link {
+    font-family: 'ThePacific';
+    line-height: 30px;
+    font-size: 20px;
+    text-decoration: underline;
+}

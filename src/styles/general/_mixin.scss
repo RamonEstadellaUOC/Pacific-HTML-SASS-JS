@@ -1,0 +1,41 @@
+@mixin btn {
+    width: 150px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    padding: 15px;
+    border-radius: 50px;
+    font-family: 'ThePacific';
+    margin: auto;
+    transition: 300ms;
+    margin-bottom: 100px;
+}
+
+@mixin p {
+    font-family: 'ThePacific';
+    text-align: center;
+    max-width: 1000px;
+    margin: auto;
+    padding: 50px;
+    letter-spacing: 2px;
+    line-height: 30px;
+    font-size: 20px;
+}
+
+@mixin h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-family: 'ThePacific';
+    line-height: 30px;
+    font-size: 50px;
+}
+
+@mixin main {
+    background: {
+        image: url(../assets/img/v546batch3-mynt-34-badgewatercolor_1.jpeg);
+        position: center;
+        size: cover;
+    }
+}
+

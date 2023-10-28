@@ -1,0 +1,177 @@
+
+// MAIN CATEGORIA
+
+// Div categoria
+
+.categoria-main {
+    @include main;
+    display: flex;
+    flex-direction: column;
+}
+
+.categoria__p {
+    @include p;
+}
+
+// Div container
+
+.main-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+
+    @media (max-width: 1504px) {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+// Section libros
+
+.libros {
+    display: flex;
+    flex-direction: column;
+}
+
+.libros__h2 {
+    @include h2;
+}
+
+.libros-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+}
+
+.libros__p {
+    @include p;
+}
+
+
+.libros-container__img--right {
+    transform: rotate(5deg);
+}
+
+.libros-container__img--left {
+    transform: rotate(-5deg);
+}
+
+.libros-container__img {
+    width: 200px;
+
+    @media (max-width: 444px) {
+        width: 100px;
+    }
+}
+
+.libros__btn {
+    @include btn;
+}
+
+// Section historia
+
+.historia {
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.historia__p {
+    @include p;
+}
+
+.historia__img {
+    max-width: 700px;
+    margin: auto;
+
+    @media (max-width: 730px) {
+        width: 500px;
+    }
+
+    @media (max-width: 580px) {
+        width: 300px;
+    }
+
+    @media (max-width: 346px) {
+        width: 250px;
+    }
+}
+
+
+// Section Actores
+
+
+
+.actores__h2 {
+    @include h2;
+}
+
+.cards {
+    width: 100%;
+    text-align: center;
+}
+
+.cards__img {
+    width: 900px;
+    margin: auto;
+    margin-bottom: 50px;
+
+    @media (max-width: 978px) {
+        width: 500px;
+    }
+
+    @media (max-width: 580px) {
+        width: 400px;
+    }
+
+    @media (max-width: 420px) {
+        width: 300px;
+    }
+
+    
+}
+
+
+// Section dibujos
+
+.dibujos__h2{
+    @include h2;
+}
+
+.dibujos__img {
+    width: 500px;
+
+    @media (max-width: 538px) {
+        width: 300px;
+    }
+}
+
+.dibujos__figure {
+    text-align: center;
+}
+
+.dibujos__figcap {
+    font-family: 'ThePacific';
+    text-align: center;
+    max-width: 1000px;
+    margin: auto;
+    padding: 50px;
+    letter-spacing: 2px;
+    line-height: 25px;
+    font-size: 20px;
+}
+
+.dibujos__btn {
+    @include btn;
+}
+
+.dibujos__btn:hover {
+    transform: scale(1.5);
+}
+
+
+
+
+

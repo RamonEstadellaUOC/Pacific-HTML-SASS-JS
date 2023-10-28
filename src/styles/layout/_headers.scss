@@ -1,0 +1,105 @@
+
+// HEADER
+
+.nav {
+    background: {
+        image: url(../assets/img/v546batch3-mynt-34-badgewatercolor_1.jpeg);
+        position: center;
+        size: cover;
+    }
+    height: 80px;
+    font-family: 'ThePacific';
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    border-bottom: 2px solid black;
+    position: fixed;
+    top: 0px;
+    z-index: 200;
+
+    @media (min-width: 870px ) {
+        flex-direction:row !important;
+        height: 80px !important;
+    }
+
+}
+
+.title {
+    background: {
+        image: url(../assets/img/p_transition_treatments_01.jpeg);
+        position: center;
+        size: cover;
+    }
+    height: 400px;
+    margin-top: 80px;
+
+    @media (max-width: 425px) {
+        height: 600px;
+    }
+    
+}
+
+.title__h1 {
+    font-size: 100px;
+    font-family: 'ThePacific';
+    text-align: center;
+    color: black;
+    padding: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+
+    @media (max-width: 420px ) {
+        font-size: 70px;
+    }
+}
+
+.nav__link:hover {
+    text-decoration: underline;
+}
+
+.nav__link {
+    padding: 15px;
+    color: black;
+    border-radius: 50px;
+    font-weight: bold;
+
+    @media (max-width: 870px ) {
+        display: none;
+    }
+
+    @media (min-width: 870px ) {
+        display: block !important;
+    }
+}
+
+.nav__link--selected {
+    background-color: black;
+    color: white;
+    border-radius: 50px;
+}
+
+// Menú responsive JavaScript
+
+.hamburger {
+    display: none;
+
+    @media (max-width: 870px ) {
+        display: block;
+        font-size: 35px;
+        
+    }
+
+}
+
+
+#hamburger {
+    position: absolute;
+    top: 18px;
+    right: 20px;
+}
+
+
+
+
