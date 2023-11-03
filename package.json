@@ -1,7 +1,7 @@
 {
   "name": "-y",
   "version": "1.0.0",
-  "source": "src/categoria.html",
+  "source": "src/portada.html",
   "scripts": {
     "start": "parcel src/portada.html",
     "build": "parcel build"
