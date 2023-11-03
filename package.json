@@ -1,9 +1,9 @@
 {
   "name": "-y",
   "version": "1.0.0",
-  "source": "src/portada.html",
+  "source": "src/index.html",
   "scripts": {
-    "start": "parcel src/portada.html",
+    "start": "parcel src/index.html",
     "build": "parcel build"
   },
   "author": "",
