@@ -4,18 +4,27 @@
   "source": "src/index.html",
   "scripts": {
     "start": "parcel src/index.html",
-    "build": "parcel build"
+    "build": "parcel build src/index.html",
+    "validar-html": "node html-validator.js"
   },
   "author": "",
   "license": "ISC",
   "keywords": [],
   "description": "",
   "devDependencies": {
+    "@babel/core": "^7.23.3",
     "@parcel/transformer-sass": "^2.10.0",
-    "parcel": "latest",
-    "parcel-bundler": "^1.12.5"
+    "html-validator": "^6.0.1",
+    "parcel": "latest"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.4.2"
-  }
+  },
+  "browserslist": [
+    "last 1 version",
+    "> 1%",
+    "maintained node versions",
+    "not dead",
+    "ie 11"
+  ]
 }
