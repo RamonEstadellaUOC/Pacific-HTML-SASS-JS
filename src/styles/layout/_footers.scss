@@ -12,7 +12,6 @@
     align-items: center;
     gap: 50px;
     display: flex;
-    height: 500px;
 }
 
 .footer__contact {
@@ -23,7 +22,7 @@
     justify-content: space-around;
     color: white;
 
-    @media (max-width: 962px) {
+    @media (max-width: 1208px) {
         display: flex;
         flex-direction: column;
     }
@@ -58,4 +57,22 @@
 
 .footer__socialmedia--link {
     font-size: 50px;
+}
+
+.footer__link {
+    font-family: 'ThePacific';
+    text-align: center;
+    padding: 15px;
+    border-radius: 50px;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+    border-radius: 50px;
+    margin-bottom: 10px;
+}
+
+.footer__logo-serie {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
