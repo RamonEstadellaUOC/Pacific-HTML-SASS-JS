@@ -60,3 +60,22 @@
         margin: auto;
     }
 }
+
+.trailer__object {
+    max-width: 60%;
+    height: auto;
+    margin-bottom: 30px;
+    animation: animacion-escalado 2s ease-in-out infinite alternate;
+}
+
+@keyframes animacion-escalado {
+    0% {
+      transform: scale(1); /* Tamaño normal */
+    }
+    100% {
+      transform: scale(1.1); /* Un poco más grande */
+    }
+}
+
+
+

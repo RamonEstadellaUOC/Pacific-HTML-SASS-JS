@@ -70,10 +70,12 @@
 .galeria__img.bandera {
     width: 300px;
     clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+    animation: animacion-letras 2s ease-in-out infinite alternate;
 }
 
 .avion {
     width: 450px;
+    animation: animacion-letras 2s ease-in-out infinite alternate;
 
     @media (max-width: 1467px ) {
         width: 350px;
@@ -89,6 +91,15 @@
 
     @media (max-width: 1024px ) {
         width: 300px;
+    }
+}
+
+@keyframes animacion-letras {
+    0% {
+      transform: scale(1); /* Tamaño normal */
+    }
+    100% {
+      transform: scale(1.1); /* Un poco más grande */
     }
 }
 
