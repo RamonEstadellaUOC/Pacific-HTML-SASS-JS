@@ -61,21 +61,44 @@
     }
 }
 
+/* Estilo base para la imagen */
 .trailer__object {
-    max-width: 60%;
-    height: auto;
+    display: block;
+    margin: 0 auto; /* Centrar la imagen horizontalmente */
+    max-width: 67%;
+    padding: 20px; /* Agrega un poco de espacio alrededor de la imagen */
+    border: 2px solid transparent; /* Borde inicialmente transparente */
+    transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out;
     margin-bottom: 30px;
-    animation: animacion-escalado 2s ease-in-out infinite alternate;
 }
 
-@keyframes animacion-escalado {
-    0% {
-      transform: scale(1); /* Tamaño normal */
-    }
-    100% {
-      transform: scale(1.1); /* Un poco más grande */
+@media (max-width: 768px) {
+    .trailer__object {
+        max-width: 85%;
     }
 }
 
 
+.trailer__object:hover {
+    animation: cambia-color 3s ease-in-out, escala 0.3s ease-in-out;
+    border-color: #CB4A2D; 
+    transform: scale(1.05); 
+}
 
+@keyframes cambia-color {
+    0%, 100% {
+        background-color: transparent; 
+    }
+    50% {
+        background-color: #CB4A2D; 
+    }
+}
+
+@keyframes escala {
+    0%, 100% {
+        transform: scale(1); 
+    }
+    50% {
+        transform: scale(1.1); 
+    }
+}

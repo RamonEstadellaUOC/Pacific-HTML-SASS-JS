@@ -33,10 +33,22 @@
                     <img class="dibujos__img" src="assets/img/dibuix-soldat.jpeg" alt="soldado">
                     <figcaption class="dibujos__figcap">El "opening" de la serie es toda una obra de arte. Aparecen dibujos espectaculares hechos con carboncillos. La animación fue dirigida e ilustrada por el artista STEVE FULLER, todo un maestro del dibujo con carboncillos.</figcaption>  
                 </figure>
-                
+
                 <p class="cinema__p">
                     El opening de la serie "The Pacific" es un espectáculo visual fascinante que capta la esencia de la Segunda Guerra Mundial en el Pacífico a través de sus impresionantes ilustraciones. Cada ilustración en la secuencia de apertura es una obra de arte en sí misma, que utiliza un estilo artístico único y evocador para narrar la historia de una generación de valientes soldados.
                 </p>
+
+                    <!-- IMG 1 -->
+                <div class="container">
+                    <div class="container-2" style="padding-top: 20px;">
+                        <picture>
+                            <source srcset="./assets/img/desktop_1.jpeg" media="(min-width: 1024px)">
+                            <source srcset="./assets/img/tablet_1.jpeg" media="(min-width: 768px)">
+                            <source srcset="./assets/img/mobile_1.jpeg" media="(max-width: 767px)">
+                            <img class="img__width" src="./assets/img/mobile_1.jpeg" alt="Imagen soldado 1"> 
+                        </picture>
+                    </div>
+                </div>
 
                 <p class="cinema__p">
                     Las ilustraciones nos transportan a un momento crucial de la historia, con imágenes que representan el conflicto, la camaradería y el coraje de los soldados que lucharon en el Pacífico. La paleta de colores y la elección de detalles en las ilustraciones aportan profundidad y autenticidad a la representación de la guerra, al tiempo que rinden homenaje a quienes sirvieron.
@@ -75,7 +87,36 @@
 
             </div>
 
+            <!-- IMG 2 -->
+            <div class="container">
+                <div class="container-2" style="padding-top: 20px;">
+                    <picture>
+                        <!-- Imagen de baja resolución para pantallas normales -->
+                        <source srcset="./assets/img/mobile_2.jpeg" media="(max-width: 767px)">
+                        
+                        <!-- Imagen de resolución media para pantallas de densidad de píxeles estándar -->
+                        <source srcset="./assets/img/tablet_2.jpeg" media="(min-resolution: 96dpi)">
+                        
+                        <!-- Imagen de alta resolución para pantallas de alta densidad de píxeles (por ejemplo, Retina) -->
+                        <source srcset="./assets/img/desktop_2jpeg.jpeg" media="(min-resolution: 192dpi)">
+                        
+                        <!-- Imagen de resolución estándar para otras pantallas -->
+                        <img class="img__width" src="./assets/img/desktop_2jpeg.jpeg" alt="Imagen soldado 2" sizes="(min-width: 1024px) 50vw, 100vw">
+                    </picture>
+                </div>
+            </div>
+
         
+
+
+
+            
+            
+
+            
+            
+
+
 
         
 
@@ -96,7 +137,7 @@
                 </div>
 
                 <div class="footer___menu">
-                    <a class="footer__link nav__link--selected" href="#">Inicio</a>
+                    <a class="footer__link nav__link--selected" href="index.html">Inicio</a>
                     <a class="footer__link nav__link--selected" href="categoria.html">Categoria</a>
                     <a class="footer__link nav__link--selected" href="presentacio.html">Presentación</a>
                     <a class="footer__link nav__link--selected" href="enllaços.html">Créditos de imagen</a>
