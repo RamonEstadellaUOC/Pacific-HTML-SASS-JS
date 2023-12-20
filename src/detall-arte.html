@@ -26,29 +26,34 @@
 
         <main class="detall-main">
 
+
             <div class="cinema">
                 <h2 class="cinema__h2">Ilustraciones del "opening" de la serie The Pacific</h2>
 
-                <figure class="dibujos__figure">
-                    <img class="dibujos__img" src="assets/img/dibuix-soldat.jpeg" alt="soldado">
-                    <figcaption class="dibujos__figcap">El "opening" de la serie es toda una obra de arte. Aparecen dibujos espectaculares hechos con carboncillos. La animación fue dirigida e ilustrada por el artista STEVE FULLER, todo un maestro del dibujo con carboncillos.</figcaption>  
-                </figure>
+
+                <!-- IMG 1 resolution switching -->
+                <img class="img__detall" src="./assets/img/dibuix-soldatnou.jpeg"
+                srcset="./assets/img/dibuix-soldatnou2.jpeg 2x, ./assets/img/dibuix-soldatnou.jpeg 3x"
+                alt="Descripción de la imagen">
+
+                <p class="cinema__p">El "opening" de la serie es toda una obra de arte. Aparecen dibujos espectaculares hechos con carboncillos. La animación fue dirigida e ilustrada por el artista STEVE FULLER, todo un maestro del dibujo con carboncillos.</p>
 
                 <p class="cinema__p">
                     El opening de la serie "The Pacific" es un espectáculo visual fascinante que capta la esencia de la Segunda Guerra Mundial en el Pacífico a través de sus impresionantes ilustraciones. Cada ilustración en la secuencia de apertura es una obra de arte en sí misma, que utiliza un estilo artístico único y evocador para narrar la historia de una generación de valientes soldados.
                 </p>
 
-                    <!-- IMG 1 -->
-                <div class="container">
-                    <div class="container-2" style="padding-top: 20px;">
-                        <picture>
-                            <source srcset="./assets/img/desktop_1.jpeg" media="(min-width: 1024px)">
-                            <source srcset="./assets/img/tablet_1.jpeg" media="(min-width: 768px)">
-                            <source srcset="./assets/img/mobile_1.jpeg" media="(max-width: 767px)">
-                            <img class="img__width" src="./assets/img/mobile_1.jpeg" alt="Imagen soldado 1"> 
-                        </picture>
-                    </div>
-                </div>
+                    <!-- IMG 1 resolution switching -->
+                
+                    <img style="max-width: 100%; height: auto; padding: 50px;" srcset="
+                    ./assets/img/mobile_1nou.jpeg 320w,
+                    ./assets/img/tablet_1.jpeg 480w,
+                    ./assets/img/desktop_1nou.jpeg 800w"
+                    sizes="(max-width: 320px) 280px,
+                            (max-width: 480px) 440px,
+                            800px"
+                    src="./assets/img/desktop_1nou.jpeg"
+                    alt="Elva dressed as a fairy" />
+                    
 
                 <p class="cinema__p">
                     Las ilustraciones nos transportan a un momento crucial de la historia, con imágenes que representan el conflicto, la camaradería y el coraje de los soldados que lucharon en el Pacífico. La paleta de colores y la elección de detalles en las ilustraciones aportan profundidad y autenticidad a la representación de la guerra, al tiempo que rinden homenaje a quienes sirvieron.
@@ -68,7 +73,7 @@
 
             <div class="ilustracion">
                 <figure class="ilustracion__figure">
-                    <img class="ilustracion__img" src="assets/img/pacific_ahmet_hoosier_test-0-1280-0-1024.jpeg" alt="soldado">
+                    <img class="ilustracion__img" src="assets/img/soldatpistola.webp" alt="soldado">
                     <figcaption class="ilustracion__figcap">Ilustración de STEVE FULLER.</figcaption>  
                 </figure>
                 <a  class="ilustracion__link" href="https://www.artofthetitle.com/title/the-pacific/" target="_blank">Enlaze a la ENTREVISTA a STEVE FULLER, ilustrador y director de los dibujos del intro de The Pacific.</a>
@@ -87,7 +92,7 @@
 
             </div>
 
-            <!-- IMG 2 -->
+            <!-- IMG 2 ART DIRECTION-->
             <div class="container">
                 <div class="container-2" style="padding-top: 20px;">
                     <picture>
@@ -105,6 +110,10 @@
                     </picture>
                 </div>
             </div>
+
+            
+
+            
 
         
 

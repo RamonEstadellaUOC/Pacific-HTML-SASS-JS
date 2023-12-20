@@ -4,6 +4,10 @@
     @include main;
 }
 
+.cinema {
+    text-align: center;
+}
+
 
 .cinema__h2, .ilustracion__h2 {
     padding: 50px;
@@ -108,4 +112,15 @@ picture, .img__width {
     margin: auto;
     padding-bottom: 50px;
     text-align: center;
+}
+
+.detall-main {
+    text-align: center;
+}
+
+.img__detall {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 40px;
+    padding: 30px;
 }
